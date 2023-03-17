@@ -1,24 +1,33 @@
-import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.scss'
+import React, { useEffect, useState } from "react";
+import { View, Text, Image, OpenData } from "@tarojs/components";
+import Taro from "@tarojs/taro";
+import "./index.scss";
 
-export default class Index extends Component {
+const Homepage = () => {
+  const [userInfo, setUserInfo] = useState<any>({});
 
-  componentWillMount () { }
+  const getUserInfo = () => {
+    Taro.getUserInfo({}).then((res) => {
+      console.log("res: ", res);
+      setUserInfo(res);
+    });
+  };
 
-  componentDidMount () { }
+  useEffect(() => {
+    getUserInfo();
+  }, []);
 
-  componentWillUnmount () { }
+  return (
+    <View className="index">
+      <Text>Hello world12!</Text>
+      <OpenData type="userAvatarUrl" />
+      <OpenData type="userNickName" />
+      <Image
+        // style="width: 300px;height: 100px;background: #fff;"
+        src={userInfo?.userInfo?.avatarUrl}
+      />
+    </View>
+  );
+};
 
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
-    return (
-      <View className='index'>
-        <Text>Hello world!</Text>
-      </View>
-    )
-  }
-}
+export default Homepage;
