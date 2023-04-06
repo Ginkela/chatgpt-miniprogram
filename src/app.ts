@@ -7,8 +7,15 @@ class App extends Component {
     // 登录
     Taro.login({
       success: (res) => {
-        console.log(res);
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        Taro.request({
+          url: "https://www.changebox.cn/wechat_login",
+          data: {
+            code: res?.code,
+          },
+        }).then((res) => {
+          console.log("res", res);
+        });
       },
     });
   }

@@ -1,0 +1,136 @@
+$backgroundColor: #00447a;
+
+$lineColor: rgba(255, 255, 255, 0.5);
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.index {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $backgroundColor;
+  z-index: 10;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  border-radius: 120px;
+  border: 1px solid $lineColor;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.line {
+  height: 30px;
+  width: 0.5px;
+  background-color: $lineColor;
+}
+
+.nav-bar-title {
+  margin-top: 4vh;
+  color: #fff;
+  max-width: 48vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn {
+  flex: 1;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2px;
+}
+
+.navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.navbar-title {
+  margin-left: 10px;
+}
+
+.navbar-drawer {
+  background-color: $backgroundColor;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 38px;
+}
+
+.navbar-logo {
+  padding-top: 128px;
+}
+
+.navbar-img {
+  width: 320px;
+  height: 116px;
+}
+
+.navbar-drawer-header {
+  margin-top: 48px;
+}
+
+.drawer-header-text {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.drawer-body {
+  padding: 10px;
+  flex: 1;
+  overflow: auto;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-item.selected {
+  background-color: #6696b6;
+}
+
+.history-item-text {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.drawer-footer {
+  display: flex;
+  align-items: center;
+  margin: 48px 0;
+}
+
+.drawer-footer-btn {
+  background-color: transparent;
+}
+
+.drawer-footer-text {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 28px;
+}

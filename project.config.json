@@ -1,19 +1,21 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "myApp",
-  "description": "test",
+  "projectname": "chat-ai-miniprogram",
+  "description": "为用户提供智能设计方案，优化计算方案，节约用户在冗杂事项上的时间，节约时间成本，让用户更好地把精力放在更重要的事情上。",
   "appid": "wx7c53d4b6852150c8",
   "setting": {
     "urlCheck": true,
     "es6": false,
     "postcss": false,
-    "minified": false,
+    "minified": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "condition": false
+    "condition": false,
+    "minifyWXSS": false,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.30.2",

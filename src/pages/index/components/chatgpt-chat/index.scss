@@ -1,0 +1,20 @@
+$backgroundColor: #00447a;
+
+.chatgptChat {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  justify-content: flex-start;
+}
+.chatgptChatContent {
+  padding: 24px;
+  border-radius: 36px;
+  background-color: $backgroundColor;
+  color: #fff;
+  margin: 0 16px;
+}
+
+.avatar {
+  flex-shrink: 0;
+  padding: 16px;
+}

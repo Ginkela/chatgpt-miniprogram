@@ -1,0 +1,18 @@
+.myChat {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  justify-content: flex-end;
+}
+.myChatContent {
+  padding: 24px;
+  border-radius: 36px;
+  background-color: #009f95;
+  margin: 0 16px;
+  color: #fff;
+}
+
+.avatar {
+  flex-shrink: 0;
+  padding: 16px;
+}

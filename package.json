@@ -1,5 +1,5 @@
 {
-  "name": "myApp",
+  "name": "chat-ai-miniprogram",
   "version": "1.0.0",
   "private": true,
   "description": "test",
@@ -9,6 +9,7 @@
     "css": "sass"
   },
   "scripts": {
+    "start": "npm run build:weapp -- --watch",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -37,27 +38,32 @@
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.1.1",
+    "@tarojs/react": "3.1.1",
     "@tarojs/runtime": "3.1.1",
     "@tarojs/taro": "3.1.1",
-    "@tarojs/react": "3.1.1",
+    "axios": "0.25.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react": "^17.0.0"
+    "taro-ui": "3.0.0-alpha.3"
   },
   "devDependencies": {
-    "@types/webpack-env": "^1.13.6",
-    "@types/react": "^17.0.2",
-    "@tarojs/mini-runner": "3.1.1",
     "@babel/core": "^7.8.0",
-    "@tarojs/webpack-runner": "3.1.1",
+    "@tarojs/mini-runner": "3.1.1",
+    "@tarojs/plugin-framework-react": "^3.6.2",
+    "@tarojs/plugin-platform-h5": "^3.6.2",
+    "@tarojs/webpack-runner": "^3.6.2",
+    "@types/react": "^17.0.2",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
     "babel-preset-taro": "3.1.1",
-    "eslint-config-taro": "3.1.1",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.8.2",
+    "eslint-config-taro": "3.1.1",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "stylelint": "9.3.0",
-    "@typescript-eslint/parser": "^4.15.1",
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
     "typescript": "^4.1.0"
   }
 }
